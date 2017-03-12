@@ -20,9 +20,9 @@ end
 
 5.times do 
   Article.create(
-    user_id: User.all.sample,
-    category_id: Category.all.sample,
-    title: Faker::Hipster.sentence,
+    user_id: 1,
+    category_id: 3,
+    title: Faker::Hipster.sentence(1),
     body: Faker::Hipster.paragraph(3)
     )
 end
@@ -31,8 +31,8 @@ end
 
 5.times do
   Vote.create(
-  user_id: User.all.sample,
-  article_id: Article.all.sample,
+  user_id: 2,
+  article_id: 4,
   vote_value: [-1, 0, 1].sample
   )
 end
@@ -40,8 +40,8 @@ end
 
 5.times do 
   Comment.create(
-  user_id: User.all.sample,
-  article_id: Article.all.sample,
+  user_id: 1,
+  article_id: 3,
   body: Faker::Hipster.sentence
    ) 
 end
