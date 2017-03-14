@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
  resources :users
  resources :articles
- resources :comment 
- resources :categories, :only => [:index, :show]
+ resources :comments 
+ resources :locations, :only => [:index, :show]
  resources :votes, :only => [:show]
 end
