@@ -13,8 +13,9 @@ end
 
 
 5.times do
-  Category.create(
-    name: Faker::Hipster.sentence(1)
+  Location.create(
+    country: 'USA',
+    city: 'San Francisco'
     )
 end
 

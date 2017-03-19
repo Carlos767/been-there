@@ -3,12 +3,12 @@ class Vote < ApplicationRecord
   belongs_to :article
   
   def up_vote?
-     value == 1
-   end
+    value == 1
+  end
  
-   def down_vote?
-     value == -1
-   end
+  def down_vote?
+    value == -1
+  end
 
   def update_post
     post.update_rank

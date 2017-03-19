@@ -5,8 +5,8 @@
     <td><%= article.description %></td>
     <td><%= pluralize(article.votes.count, "vote") %></td>
     <td><%= button_to '+1', upvote_article_path(article), method: :post %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to '/show', article %></td>
+    <td><%= link_to '/edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>

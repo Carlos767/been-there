@@ -1,8 +1,5 @@
-<p>Title: <%= @article.title %></p>
-<p>Location: <%= @article.location %></p>
-<p>Description: <%= @article.description %></p>
-
-
-
-  
-    
+<div class="col-sm-11 col-xs-12 article-content">
+  <h2 class="text-center"><%= @article.title %></h2>
+  <h5 class="text-center"><%= @article.created_at.strftime('%b %d, %Y') %></h5>
+  <div><%= raw @article.body %></div>
+</div>
